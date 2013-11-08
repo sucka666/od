@@ -1,4 +1,4 @@
-Django==1.5.4
+Django==1.6
 boto==2.15.0
 Fabric==1.6.1
 dj-database-url==0.2.2

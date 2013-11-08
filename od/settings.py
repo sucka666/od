@@ -158,7 +158,7 @@ MEDIA_URL = 'https://%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
 STATIC_URL = '/sys/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 # Memcache settings
-
+"""
 os.environ['MEMCACHE_SERVERS'] = os.environ.get('MEMCACHIER_SERVERS', '')
 os.environ['MEMCACHE_USERNAME'] = os.environ.get('MEMCACHIER_USERNAME', '')
 os.environ['MEMCACHE_PASSWORD'] = os.environ.get('MEMCACHIER_PASSWORD', '')
@@ -171,4 +171,5 @@ CACHES = {
         'BINARY': True,
     }
 }
+"""
 COMPRESS_OUTPUT_DIR = 'assets'

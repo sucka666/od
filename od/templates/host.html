@@ -1,5 +1,5 @@
 {% load staticfiles %}
-{% load compress %}
+
 <!DOCTYPE html>
 <html lang="{{ lang }}" prefix="content: http://purl.org/rss/1.0/modules/content/
  dc: http://purl.org/dc/terms/
@@ -28,22 +28,22 @@
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% static 'img/apple-touch-icon-120x120-precomposed.png' %}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'img/apple-touch-icon-144x144-precomposed.png' %}">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% static 'img/apple-touch-icon-152x152-precomposed.png' %}">
-    {% compress css %}
+
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'css/sidebar.css' %}" rel="stylesheet">
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block css_area %}{% endblock %}
-    {% endcompress %}
 
-    {% compress js %}
+
+
     <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/modernizr.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
     {% block scripts_area %}{% endblock %}
-    {% endcompress %}
+
 
     <!--[if lt IE 9]>
     <script src="{% static 'js/html5.js' %}"></script>

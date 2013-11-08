@@ -1,4 +1,3 @@
-# Django settings for od project.
 import dj_database_url
 import os
 

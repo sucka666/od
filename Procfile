@@ -1,1 +1,1 @@
-web: gunicorn arkust.wsgi
+web: gunicorn od.wsgi
